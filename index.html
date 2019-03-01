@@ -9,13 +9,19 @@
         <h1>Welcome to ServeCentral's Surveys Page!</h1>
         <p>If you have an invitation url, go directly to that page.</p>
         <form onsubmit="return myFunction()">
-            Have an invitation code?<br><input type="text" name="code">
+            Have an invitation code?<br><input type="text" id="code">
             <br><input type="submit" value="Submit" id="button">
         </form>
         
         <script>
             function myFunction() {
-                window.open("https://nd1227.github.io/test");
+                switch (document.getElementById("code").nodeValue) {
+                    case "12345": window.open("https://nd1227.github.io/interest-survey");
+                    break;
+
+                    default: window.open("https://nd1227.github.io/test")
+                    break;
+                }
             }
         </script>
 	</body>
