@@ -17,9 +17,10 @@
             function myFunction() {
                 switch (document.getElementsByName("code")[0].value) {
                     case "12345":
-                        window.location.replace("https://nd1227.github.io/test")
+                        window.location.replace("https://nd1227.github.io/test");
+                        break;
                 }
-                document.getElementById("frm1").value = "Working";
+                document.getElementsByName("code")[0].value = "Working";
             }
         </script>
 	</body>
