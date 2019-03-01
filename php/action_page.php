@@ -4,7 +4,6 @@
 <?php
     switch ($code) {
         case "12345":
-            header("Location: https://www.google.com");
+            header("Location: http://nd1227.github.io/test.html");
     }
-    exit;
 ?>
