@@ -7,8 +7,9 @@
 	<body>
         <h1>Welcome to ServeCentral's Surveys Page!</h1>
         <p>If you have an invitation url, go directly to that page.</p>
-        <form action="php/action_page.php">
-            Have an invitation code?<br>Enter it here: <input type="text" invitation="code">
+        <form action="php/action_page.php" method="get">
+            Have an invitation code?<br><input type="text" name="code">
+            <br><input type="submit" id="button">
         </form>
 	</body>
 </html>

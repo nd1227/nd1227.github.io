@@ -1,8 +1,8 @@
 <?php
-    switch $_GET['code']:
+    $_GET['code']:
     {
         case '12345':
-            header('Location: facebook.com');
+            header('Location: http://facebook.com');
         break;
          ....
 
