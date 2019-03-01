@@ -8,14 +8,14 @@
 	<body>
         <h1>Welcome to ServeCentral's Surveys Page!</h1>
         <p>If you have an invitation url, go directly to that page.</p>
-        <form id="frm1">
+        <form>
             Have an invitation code?<br><input type="text" name="code">
             <br><input type="submit" value="Submit" onclick="myFunction()" id="button">
         </form>
         
         <script>
             function myFunction() {
-                switch (document.getElementsByName("code")[0].value) {
+                switch (document.getElementById("code").value) {
                     case "12345":
                         window.location.replace("https://nd1227.github.io/test");
                         break;
