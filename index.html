@@ -15,8 +15,7 @@
         
         <script>
             function myFunction() {
-                var x = document.getElementById("frm1");
-                switch (x[0]) {
+                switch (document.getElementsByName("code")[0].value) {
                     case "12345":
                         window.location.replace("https://nd1227.github.io/test")
                 }
