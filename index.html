@@ -8,9 +8,22 @@
 	<body>
         <h1>Welcome to ServeCentral's Surveys Page!</h1>
         <p>If you have an invitation url, go directly to that page.</p>
-        <form method="post" action="php/action_page.php">
+        <form id="frm1" action="php/action_page.php">
             Have an invitation code?<br><input type="text" name="code">
-            <br><input type="submit" id="button">
+            <br><input type="submit" value="Submit" id="button">
         </form>
+        
+        <button onclick="myFunction()">Try it</button>
+        
+        <script>
+            function myFunction() {
+                var x = document.getElementById("frm1");
+                switch (x[0]) {
+                    case "12345":
+                        window.location = "https://nd1227.github.io/test"
+                        break;
+                }
+            }
+        </script>
 	</body>
 </html>
